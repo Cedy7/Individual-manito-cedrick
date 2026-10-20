@@ -8,31 +8,40 @@ public class Activity3_Manito {
 
         boolean isAllowedToEnter = age >= 18 && hasValidID == true;
 
-        String result1 = isAllowedToEnter ? "Yes, Allowed to Enter." : "No, Not Allowed to Enter.";
+        String result1 = isAllowedToEnter ? "Yes" : "No";
 
-        System.out.println("Is the person allowed to enter?: " + result1);
+        System.out.println("--- Task 2: Event Entry Check ---");
+        System.out.println("Allowed to enter the event: " + result1);
+        System.out.println();
 
         boolean isWeekend = false;
-        boolean isHoliday = false;
+        boolean isHoliday = true;
 
-        boolean isRegularWeekdayToday = isWeekend == true || isHoliday == true;
+        boolean noClassToday = isWeekend == true || isHoliday == true;
 
-        String result2 = (isRegularWeekdayToday == false) ? "Yes, There is a class today." : "No, There is no class today.";
+        String result2 = (noClassToday == true) ? "Yes, no classes." : "No, There is a class today.";
 
-        System.out.println("Is there a class today?: " + result2);
+        System.out.println("--- Task 3: Class Status Check ---");
+        System.out.println("Are there no classes today? " + result2);
+        System.out.println();
 
-        int score = 75;
+        int score = 85;
 
         String result3 = (score >= 75) ? "Passed" : "Failed";
 
-        System.out.println("Grade of student X this semester: " + result3);
+        System.out.println("--- Task 4: Pass or Fail Check ---");
+        System.out.println("Score: " + score);
+        System.out.println("Result: " + result3);
+        System.out.println();
 
-        int num = 20;
-        int num2 = 10;
+        int num = 10;
+        int num2 = 25;
 
         int result4 = (num > num2) ? num : num2;
 
-        System.out.println("Which number holds the larger number?: " + result4);
+        System.out.println("--- Task 5: Larger Number Check ---");
+        System.out.println("Number 1: " + num + ", " + "Number 2: " + num2);
+        System.out.println("The larger number is: " + result4);
 
     }
 }

@@ -14,7 +14,7 @@ public class WhileLoopStatement {
         // \n = new line
         // \t = tab
 
-        while (isRunning) {
+        while (true) {
             System.out.println("* Load Reg *");
             System.out.println("[1]");
             System.out.println("[2]");
@@ -32,7 +32,7 @@ public class WhileLoopStatement {
                 case 3 -> System.out.println("you are now subscribed to Call N Text Only\n");
                 case 0 -> {
                     System.out.println("Exit...");
-                    isRunning = false;
+                    return;
                 }
                 default -> System.out.println("Invalid Input!\n");
             }
@@ -69,4 +69,46 @@ public class WhileLoopStatement {
 
         // windows + .
         System.out.println("Game is over 😊");
-*/
+
+
+
+
+
+ */
+
+/*
+// Flag variable / boolean flag
+        boolean isRunning = true;
+
+        // escape sequences
+        // \n = new line
+        // \t = tab
+
+        while (isRunning) {
+            System.out.println("* Load Reg *");
+            System.out.println("[1]");
+            System.out.println("[2]");
+            System.out.println("[3]");
+            System.out.println("[0]");
+            System.out.print("Enter you choice:");
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1 -> {
+                    System.out.println("you are now subscribed to Text Only\n");
+                    isRunning = false;
+                }
+                case 2 -> System.out.println("you are now subscribed to Call Only\n");
+                case 3 -> System.out.println("you are now subscribed to Call N Text Only\n");
+                case 0 -> {
+                    System.out.println("Exit...");
+                    isRunning = false;
+                }
+                default -> System.out.println("Invalid Input!\n");
+            }
+
+        }
+
+
+
+ */

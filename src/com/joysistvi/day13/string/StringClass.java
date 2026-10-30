@@ -14,15 +14,18 @@ public class StringClass {
 
         System.out.println("*** Login ***");
 
+        String username = " ";
+        String password = " ";
+
         for (int attempt = 0; attempt < 5; attempt++) {
             String correctUsername = "admin";
             String correctPassword = "admin123";
 
             System.out.print("Enter Username: ");
-            String username = scanner.nextLine();
+            username = scanner.nextLine();
 
             System.out.print("Enter Password: ");
-            String password = scanner.nextLine();
+            password = scanner.nextLine();
 
             // Validation
             if (username.isEmpty() && password.isEmpty()) {
@@ -41,9 +44,6 @@ public class StringClass {
 
 
         }
-
-        System.out.println("Detected suspicious logic activity!\nProgram ends for security measure purpose!");
-
 
     }
 }

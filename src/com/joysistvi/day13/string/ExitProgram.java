@@ -3,8 +3,19 @@ package com.joysistvi.day13.string;
 import java.util.Scanner;
 
 public class ExitProgram {
+
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
+        exitMethod();
+
+        scanner.close();
+
+    }
+
+    public static void exitMethod() {
+
         // Exit Program
         System.out.println("Are you sure that you want to exit the program?");
         System.out.println("[Y] Yes - Exit Program");
@@ -18,5 +29,12 @@ public class ExitProgram {
         } else {
             System.out.println("Returning Back to Main Menu");
         }
+
     }
+
+
+
+
+
+
 }

@@ -33,5 +33,7 @@ public class Main {
         System.out.println(("Weight In Gramps: " + ballpen.getWeightInGramps()));
 
 
+
+        scanner.close();
     }
 }

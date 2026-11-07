@@ -1,13 +1,10 @@
 package com.joysistvi.day20.activity13;
-
 import java.util.Scanner;
 
 public class Activity13_Manito {
-
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        UserAccount account = new UserAccount();
 
         String message1 = """
                 ***********************************
@@ -18,31 +15,25 @@ public class Activity13_Manito {
         System.out.println(message1);
 
         System.out.print("Enter First Name: ");
-        account.setFirstName(scanner.nextLine());
-
+        String firstName = scanner.nextLine();
 
         System.out.print("Enter Middle Name: ");
-        account.setMiddleName(scanner.nextLine());
+        String middleName = scanner.nextLine();
 
         System.out.print("Enter Last Name: ");
-        account.setLastName(scanner.nextLine());
+        String lastName = scanner.nextLine();
 
         System.out.print("Enter Address: ");
-        account.setAddress(scanner.nextLine());
+        String address = scanner.nextLine();
 
+        String email = emailMethod();
+        String password = passwordMethod();
 
-        account.setEmail(emailMethod());
+        UserAccount account = new UserAccount(firstName, middleName, lastName, address, email, password);
 
-        account.setPassword(passwordMethod());
-
-
-        System.out.println("\n--- User Account Created ---");
-        System.out.println("Full Name: " + account.getFirstName() + " " + account.getMiddleName() + " " + account.getLastName());
-        System.out.println("Address: " + account.getAddress());
-        System.out.println("Email: " + account.getEmail());
-
+        System.out.println();
+        System.out.println(account);
     }
-
 
     public static String emailMethod() {
         while (true) {
@@ -99,3 +90,36 @@ public class Activity13_Manito {
         }
     }
 }
+
+
+
+/*
+//        UserAccount account = new UserAccount();
+
+//
+//        System.out.print("Enter First Name: ");
+//        account.setFirstName(scanner.nextLine());
+//
+//
+//        System.out.print("Enter Middle Name: ");
+//        account.setMiddleName(scanner.nextLine());
+//
+//        System.out.print("Enter Last Name: ");
+//        account.setLastName(scanner.nextLine());
+//
+//        System.out.print("Enter Address: ");
+//        account.setAddress(scanner.nextLine());
+
+//
+//        account.setEmail(emailMethod());
+//
+//        account.setPassword(passwordMethod());
+
+
+//        System.out.println("\n--- User Account Created ---");
+//        System.out.println("Full Name: " + account.getFirstName() + " " + account.getMiddleName() + " " + account.getLastName());
+//        System.out.println("Address: " + account.getAddress());
+//        System.out.println("Email: " + account.getEmail());
+
+
+ */

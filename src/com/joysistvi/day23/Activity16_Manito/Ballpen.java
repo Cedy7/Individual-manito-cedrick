@@ -17,17 +17,6 @@ public class Ballpen extends Pen {
     @Override
     public void refill() { System.out.println("Replacing the ballpen ink refill."); }
 
-
-    // Overloaded Methods
-    /*
-    block of code
-     */
-
-    //Overloaded Methods
-    /*
-    block of code
-     */
-
     // getters or Accessor Methods
     public double getPointSize() {
         return pointSize;

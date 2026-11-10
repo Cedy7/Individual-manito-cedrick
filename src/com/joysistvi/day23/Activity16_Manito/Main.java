@@ -23,26 +23,17 @@ public class Main {
         testPen(pen);
         testPen(ballpen);
         testPen(pencil);
-//        System.out.println(ballpen);
-//        ballpen.write();
-//        System.out.println("\n" + pencil);
-//        pencil.write();
 
         System.out.print("\n=== Overloading ===\n");
         pen.write("Hello");
         pen.write("Hello", 3);
-
-
-
     }
-
 
     public static void testPen(Pen pen) {
         System.out.println("\n" + pen);
         pen.write();
         pen.refill();
     }
-
 
     // Difference of Method Overloading(Compile-Time) and Method Overriding(Runtime)
     /* Method Overloading is when the program will choose what method to implement

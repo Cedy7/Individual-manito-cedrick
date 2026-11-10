@@ -17,17 +17,6 @@ public class Pencil extends Pen {
     @Override
     public void refill() { System.out.println("Replacing the pencil lead."); }
 
-    // Overloaded Methods
-    /*
-    block of code
-     */
-
-    //Overloaded Methods
-    /*
-    block of code
-     */
-
-
     // getter or accessor method
     public String getHardness() {
         return hardness;

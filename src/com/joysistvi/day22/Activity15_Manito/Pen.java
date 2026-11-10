@@ -10,9 +10,7 @@ public class Pen {
         this.brand = brand;
         this.color = color;
         this.weightInGrams = weightInGrams;
-
     }
-
     //method
     public void write() {
         System.out.println("Writing with a pen.");

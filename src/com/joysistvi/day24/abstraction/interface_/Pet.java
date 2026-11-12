@@ -18,9 +18,9 @@ public interface Pet {
     void showAffection();
 
 
-    void pay();
+//    void pay();
 
-    void getStocks();
+//    void getStocks();
 }
 
 // getStocks()

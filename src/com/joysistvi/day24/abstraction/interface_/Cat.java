@@ -38,7 +38,6 @@ public class Cat extends Animal implements Pet {
         System.out.println(getName() + " purrs and rubs against you.");
     }
 
-
     @Override
     public String toString() {
         return "Type: Cat\n"

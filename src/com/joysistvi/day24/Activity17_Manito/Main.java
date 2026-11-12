@@ -1,10 +1,7 @@
 package com.joysistvi.day24.Activity17_Manito;
 
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
-
         /*
         Code: Pen pen = new Pen("generic", "Blue", 15);
         error: 'Pen' is abstract; cannot be instantiated
@@ -26,7 +23,6 @@ public class Main {
         System.out.println("\n=== testClickable() ===");
         testClickable(ballpen);
 
-
         /*
         Code: testClickable(pencil);
         Error: incompatible types: com.joysistvi.day24.Activity17_Manito.Pencil cannot be converted to com.joysistvi.day24.Activity17_Manito.Clickable
@@ -35,7 +31,6 @@ public class Main {
         the program runs the method body that will direct to clickable interface.
         */
     }
-
 
     public static void testPen(Pen pen) {
         System.out.println("\n" + pen); // to remove: \n

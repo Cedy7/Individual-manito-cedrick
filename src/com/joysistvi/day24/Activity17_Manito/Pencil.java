@@ -1,7 +1,5 @@
 package com.joysistvi.day24.Activity17_Manito;
-
 public class Pencil extends Pen implements Refillable{
-
     private String hardness;
 
     public Pencil(String brand, String color, double weightInGrams, String hardness) {

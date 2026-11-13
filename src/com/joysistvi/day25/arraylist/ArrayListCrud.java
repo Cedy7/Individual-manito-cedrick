@@ -1,4 +1,4 @@
-package com.joysistvi.day25.collectionsframework;
+package com.joysistvi.day25.arraylist;
 
 public class ArrayListCrud {
 
